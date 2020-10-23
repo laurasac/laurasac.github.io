@@ -1,55 +1,119 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Birdwatching</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300|Cinzel+Decorative:700" rel="stylesheet">
-    <link rel = "stylesheet" href = "style.css">
 
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- grandezza viewport uguale a qulla del device -->
+  <title>Serie tv</title>
+  <!-- Link per importare bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
 
-  <body>
-
-      <header>
-        <h1>Birdwatching </h1>
-        <img src="dove.png" alt="a simple dove logo">
-
-        <nav>
-          <ul>
-            <li><span>Home</span></li>
-            <li><a href="#">Get started</a></li>
-            <li><a href="#">Photos</a></li>
-            <li><a href="#">Gear</a></li>
-            <li><a href="#">Forum</a></li>
-          </ul>
-        </nav>
-
-      <main>
-        <article>
-          <h2>Welcome</h2>
-
-          <p>Welcome to our fake birdwatching site. If this were a real site, it would be the ideal place to come to learn more about birdwatching, whether you are a beginner looking to learn how to get into birding, or an expert wanting to share ideas, tips, and photos with other like-minded people.</p>
-
-          <p>So don't waste time! Get what you need, then turn off that computer and get out into the great outdoors!</p>
-      </article>
-
-      <aside>
-        <h2>Favourite photos</h2>
-
-        <a href="favorite-1.jpg"><img src="favorite-1_th.jpg" alt="Small black bird, black claws, long black slender beak, links to larger version of the image"></a>
-        <a href="favorite-2.jpg"><img src="favorite-2_th.jpg" alt="Top half of a pretty bird with bright blue plumage on neck, light colored beak, blue headdress, links to larger version of the image"></a>
-        <a href="favorite-3.jpg"><img src="favorite-3_th.jpg" alt="Top half of a large bird with white plumage, very long curved narrow light colored break, links to larger version of the image"></a>
-        <a href="favorite-4.jpg"><img src="favorite-4_th.jpg" alt="Large bird, mostly white plumage with black plumage on back and rear, long straight white beak, links to larger version of the image"></a>
-      </aside>
-    </main>
-
-
-    <footer>
-      <p>This  is a fake website example</p>
+<body data-spy="scroll" data-target=".navbar">
+  <div class="container">
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+  <!-- Brand -->
+  		<a class="navbar-brand font-weight-bold" href="#">
+        <img src="images/icona.ico" class="" height="30" width="30">
+        Pazzi per le serie
+      </a>
+ <!-- Links -->
+	  	<ul class="navbar-nav">
+	    	<li class="nav-item">
+	      		<a class="nav-link" href="#home">Home</a>
+		    </li>
+		    <!-- Dropdown -->
+		    <li class="nav-item dropdown">
+		      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+		        Articoli
+		      </a>
+		      <div class="dropdown-menu">
+		        <a class="dropdown-item" href="#casa">La casa di carta</a>
+		        <a class="dropdown-item" href="#skam">Skam Italia</a>
+		        <a class="dropdown-item" href="#elite">Elitè</a>
+		      </div>
+		    </li>
+        <li class="nav-item">
+		      <a class="nav-link" href="#contact">Contatti</a>
+		    </li>
+		  </ul>
+    </nav>
+    
+		<div class="row">
+      
+      <div class="col-sm-9 main" >
+	    	<div id="home">
+          <p class="display-4">Home</p>
+          <img src="images/serie.jpg" class=" float-left rounded img-art">
+	        <p class="text">non so cosa scrivere</p>
+        </div>
+        
+        <p class= "display-4 " id="casa"> Recensioni </p>
+	      <div > 
+          <h3> La casa di carta </h3>
+          <img src="images/casa.jpg" class=" float-left rounded img-art">
+	      	<p>Resistenza. Questa è la parola d’ordine de La casa di carta (La casa de papel), la serie 
+            tv ideata da Álex Pina, sbarcata su Netflix, e arrivata alla sua quarta stagione lo scorso 
+            3 aprile, ma che già si classifica come la più vista al mondo. Un fenomeno di massa, quasi 
+            un movimento rivoluzionario segnato da un’iconografia riconoscibile e altamente attraente. 
+            La resistenza in questa serie ha un colore, un inno e un volto ben precisi. Il rosso domina 
+            la scena, facendosi fuoco, sangue e divisa d’ordinanza dei protagonisti, che salta agli 
+            occhi su una scenografia quasi monocromatica, asettica e impeccabile, come gli interni 
+            della Zecca di stato spagnola in cui sono ambientate le prime due stagioni. Il rosso è 
+            il caos nell’ordine, la ribellione, la sfida alle banche e al sistema capitalista che 
+            opprime gli ultimi, impersonati dai componenti della banda, tutti ai margini, schiacciati 
+            dalla vita e costretti ad abbracciare il crimine per risollevarsi.</p>
+	      </div>
+	      <div id="skam"> 
+          <h3> Skam Italia </h3>
+          <img src="images/skam.jpg" class=" float-left rounded img-art">
+	      	<p>Il remake italiano del celebre teen drama norvegese sorprende sotto ogni aspetto, 
+            rappresentando la vita tipica di comuni adolescenti romani con serietà e attento realismo. 
+            Non indicata per chi è alla ricerca di trame impegnative e avvincenti, la consigliamo invece 
+            a chi vuole lasciarsi coinvolgere con il tempo grazie a un format innovativo e un minuzioso 
+            lavoro di adattamento alla cultura nazionale, diventando così veramente partecipe della 
+            narrazione.
+          </p>
+	      </div>
+	      	<div id="elite"> 
+            <h3> Elitè </h3>
+            <img src="images/elite.jpg" class=" float-left rounded img-art">
+            <p>Élite è una serie tv spagnola, prodotta da Netflix. Di carattere teen drama, 
+              con inclinazioni thriller, ha raggiunto rapidamente un enorme successo.Omicidi, 
+              sesso, razzismo, criminalità. Élite apre una parentesi alla scoperta dei pensieri 
+              più intimi e sconvolgenti di una serie di adolescenti, appartenenti (per la maggior parte) 
+              all’alta società di Madrid. Così, tra denaro, vite lussuose e disuguaglianze economiche, 
+              scopriamo pian piano tutte le fragilità e le paure di quelli che, in realtà, altro non 
+              sono che semplici ragazzi, impreparati alla vita.
+          </p>
+	      	</div>
+	      </div>
+        
+        <div class="col-sm-3">
+          <h3 style="margin: 25px ;">Serie tv consigliate</h3> 
+         <a href="#"> <img src="images/baby.jpg" alt="baby" class="mx-auto d-block rounded img-tv"></a>
+         <a href="#"><img src="images/stranger.png" alt="stranger things" class="mx-auto d-block rounded img-tv"></a>
+         <a href="#"><img src="images/how.jpg" alt="how i met your mother" class="mx-auto d-block rounded img-tv"></a>
+         <a href="#"><img src="images/peaky.jpg" alt="peaky blinders" class="mx-auto d-block rounded img-tv"></a>
+        </div>
+    </div>
+    
+    <footer id = "contact" class="jumbotron text-center " style="margin-bottom: 0;">
+      <img src="images/icona.ico" class="mx-auto d-block" height="60" width="60">
+      <p>Pazzi per le serie</p>
+      <p>Seguiteci  e consigliateci nuove serie su:</p>
+      <p>Instagram: pazziperleserie.official | Facebook: pazziperleserie.official | Twitter: pazziperleserie.official</p>
+      
     </footer>
-
-  </body>
+  </div>
+  
+  
+</body>
 </html>
+
+<!-- TODO metti home centrale poi metti le colonne e fai flex le recensioni -->
